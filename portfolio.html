@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div class="navbar">
+
+        <div class="navbar_content justify_content_between">
+            
+            <div class="logo_container">
+                <img src="imgs/diego.jpg" class="navbar_img" alt="...">
+                <div class="navbar_name"> DIEGO A. RAMOS </div>
+            </div>
+
+            <div class="d-flex navbar_items d-hidden-md g-md-2 grow-1 d-end">
+
+                <a class="navbar_item" href="#"> HOME </a>
+                <a class="navbar_item" href="#sobre_mi"> SOBRE MI </a>
+                <a class="navbar_item" href="#proyectos"> PROYECTOS </a>
+                <a class="navbar_item" href="#contacto"> CONTACTOS </a>
+
+            </div>
+
+            <div class="dropdown">
+                <div class="navbar_button d-show-md">
+                    <img src="imgs/menu.png" class="navbar_icon" alt="...">
+                    <div class="dropdown-content">
+                        <a class="navbar_item" href="#"> HOME </a>
+                        <a class="navbar_item" href="#sobre_mi"> SOBRE MI </a>
+                        <a class="navbar_item" href="#proyectos"> PROYECTOS </a>
+                        <a class="navbar_item" href="#contacto"> CONTACTOS </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container_fluid">
+
+        <div class="container pt-10">
+
+            <div class="welcome_hi">
+                HOLA, SOY DIEGO RAMOS
+            </div>
+
+            <div class="text_body">
+                Bienvenidos a mi portfolio, aquí encontrarán los proyectos en los
+                que estoy trabajando actualmente, además de las tecnologías que he
+                trabajado a lo largo del tiempo
+            </div>
+
+            <a href="#proyectos"><button class="btn"> MIS PROYECTOS </button></a>
+
+        </div>
+
+    </div>
+
+    <div class="container_fluid" id="sobre_mi">
+        <div class="container pt-5">
+
+            <div class="titulo"> SOBRE MI </div>
+            <hr class="hr_pretty">
+            <div class="text_body">
+                Aquí encontraras información sobre mi, sobre lo que hago y otras
+                cuestiones que hacen a mi profesión
+            </div>
+
+            <div class="d-flex g-md-2">
+
+                <div class="subtitulo col-6"> ¡Un poco sobre mi!
+
+                    <div class="text_body justify_text">
+                        Soy profesor de matematica universitaria con amplia experiencia en
+                        Analisis matemático multivariable, Álgebra lineal, teoría de números y
+                        geometría analítica. Estoy emprendiendo mis primeros
+                        pasos en la programación front y back end. He realizado trabajos de
+                        maquetación utilizando HTML, CSS y JS. Tambien tengo experiencia en el
+                        uso de Python y diversos frameworks como Django para el desarrollo
+                        de páginas web dinámicas. Tambien tengo conocimientos sobre estadística
+                        y análisis númerico con el uso de Numpy, Matplotlib, Pandas, etc.
+                        He setupeado y utilizado máquinas virtuales para el uso de Linux. Tambien
+                        tengo conocimientos sobre CRUD de base de datos.
+                    </div>
+
+                </div>
+
+                <div class="subtitulo grow-1"> Mis Habilidades 
+
+                    <div class="grid-container pt-12">
+                        <div class="grid-item"><img src="imgs/html5.png" alt="html5"></div>
+                        <div class="grid-item"><img src="imgs/css3.png" alt="html5"></div>
+                        <div class="grid-item"><img src="imgs/js.png" alt="html5"></div>
+                        <div class="grid-item"><img src="imgs/django.png" alt="html5"></div>
+                        <div class="grid-item"><img src="imgs/python.png" alt="html5"></div>
+                        <div class="grid-item"><img src="imgs/haskell.png" alt="html5"></div>
+                        <div class="grid-item"><img src="imgs/github.png" alt="html5"></div>
+                        <div class="grid-item"><img src="imgs/mysql.png" alt="html5"></div>
+                        <div class="grid-item"><img src="imgs/pascal.png" alt="html5"></div>
+                        <div class="grid-item"><img src="imgs/cpp.png" alt="html5"></div>
+                        <div class="grid-item"><img src="imgs/virtual.png" alt="html5"></div>
+                        <div class="grid-item"><img src="imgs/linux.png" alt="html5"></div>
+                        <div class="grid-item"><img src="imgs/windows.png" alt="html5"></div>
+                    </div>
+
+                </div>
+
+            </div>
+    
+            
+        </div>
+    </div>
+
+    <div class="container_fluid" id="proyectos">
+
+        <div class="container pt-5">
+
+            <div class="titulo"> PROYECTOS </div>
+            <hr class="hr_pretty">
+            <div class="text_body">
+                A continuación podrás visualizar los proyectos en los que he
+                trabajado a lo largo del tiempo con sus respectivos links
+                a Github o páginas web.
+            </div>
+        
+            <!---------------Aca van todos los proyecto-------------------------------->
+
+            <div class="container_proyecto d-flex pt-2 pb-5 g-md-2">
+                <img src="imgs/Cuponera.jpg" class="img_fluid col-6" alt="...">
+                <div class="container_descripcion d-flex d-column justify_content_center align_items_center col-6">
+                    <div class="subtitulo text_align_center"> Cuponera </div>
+                    <div class="text_body">
+                        Realizado con Python y la librería TKinter, utiliza una BBDD
+                        para generar cupones de descuento para bares o vinotecas.
+                        Se puede agregar un producto, el porcentaje de descuento y
+                        los días de validez del cupon y se genera una imagen PDF para
+                        imprimir.
+                        Ver en Github:
+                    </div>
+                    <a href="https://laevatein54.com.ar/CuponeraDesk/index.php"> <div class="btn"> VER PROYECTO </div> </a>
+                    
+                </div>
+            </div>
+
+            <div class="container_proyecto d-flex pt-2 pb-5 g-md-2">
+                <img src="imgs/MosaicoDeImagenes.jpg" class="img_fluid col-6" alt="...">
+                <div class="container_descripcion d-flex d-column justify_content_center align_items_center col-6">
+                    <div class="subtitulo text_align_center"> Mosaico de Imágenes </div>
+                    <div class="text_body">
+                        Esta aplicación realizada en Python recrea imágenes utilizando otras imágenes más pequeñas.
+                        Tiene un sistema de detección de colores que permite elegir que imagen
+                        encaja mejor en cada sección de la fotografía original.
+                    </div>
+                    <a href="#"> <div class="btn"> VER PROYECTO </div> </a>
+                    
+                </div>
+            </div>
+
+            <div class="container_proyecto d-flex pt-2 pb-5 g-md-2">
+                <img src="imgs/Cuponera.jpg" class="img_fluid col-6" alt="...">
+                <div class="container_descripcion d-flex d-column justify_content_center align_items_center col-6">
+                    <div class="subtitulo text_align_center"> Página Web Dinámica para el Club de Regatas Alte Brown </div>
+                    <div class="text_body">
+                        Este proyecto aún en desarrollo para Djando implica una herramientas 
+                        fundamental para
+                        el club. No solamente habilita la posibilidad de llegar a un mayor público, sino
+                        que tambien permite gestionar socios con login, se utilizó un usuario custom creado
+                        a las necesidades indicadas por el cliente. Permite gestionar un sistema de turnos
+                        para inscripciones. Los administradores pueden obtener un listado de los inscriptos
+                        y mucho más.
+                    </div>
+                    <a href="#"> <div class="btn"> VER PROYECTO </div> </a>
+                    
+                </div>
+            </div>
+
+            <div class="container_proyecto d-flex pt-2 pb-5 g-md-2">
+                <img src="imgs/agoodshop.png" class="img_fluid col-6" alt="...">
+                <div class="container_descripcion d-flex d-column justify_content_center align_items_center col-6">
+                    <div class="subtitulo text_align_center"> Calculadora de costos dinámica con lectura de API externa </div>
+                    <div class="text_body">
+                        Este proyecto se desarrolló en puro HTML, CSS y Javascript. Realiza la lectura
+                        de una API con productos y calcula el total de una compra en función de los
+                        productos elegidos por el usuario.
+                    </div>
+                    <a href="#"> <div class="btn"> VER PROYECTO </div> </a>
+                    
+                </div>
+            </div>
+
+        </div>
+    
+    </div>
+        
+
+
+        <!----------------Aca terminan los proyectos------------------------------->
+
+
+        <div class="container_fluid bg_black">
+
+            <div class="container pt-5">
+
+                <div class="d-flex g-md-4">
+
+                    <div class="footer_titulo text_align_left" id="contacto"> SOCIAL 
+
+                        <div class="d-flex d-flex-row g-md-05 g-05" id="social_container">
+                            
+                            <a href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit"><img class="social_icon pt-2" src="imgs/linkedin.png" alt="..."></a>
+                            <a href="mailto: diegoramos11357@hotmail.com"><img class="social_icon pt-2" src="imgs/mail.png" alt="..."></a>
+                            <a href="https://github.com/Bunimakio"><img class="social_icon pt-2" src="imgs/github_foot.png" alt="..."></a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="footer_titulo text_align_left"> DIEGO RAMOS 
+                        <div class="footer_body text_align_left pb-5 pt-2"> 
+                            Este portfolio fue realizado por mi utilizando HTML y CSS
+                            vanilla. Su uso está destinado a la presentación de proyectos
+                            garantizando un desarrollo práctico y profesional de los productos.
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <hr>
+                <div class="footer_copyright">
+                    Hecho por Diego A. Ramos
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+</body>
+</html>
