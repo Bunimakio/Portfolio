@@ -166,6 +166,14 @@ body {
     padding-bottom: 5em;
 }
 
+.mt-5 {
+    margin-top: 5em;
+}
+
+.mb-5 {
+    margin-bottom: 5em;
+}
+
 .g-05 {
     gap: 0.5em;
 }
@@ -284,6 +292,15 @@ body {
 
 .img_fluid {
     width:100%;
+}
+
+.img_float {
+    float: left;
+}
+
+.img_resize {
+    width: 100px;
+    float: left;
 }
 
 
