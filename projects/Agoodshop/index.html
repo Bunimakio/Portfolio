@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../projects.css">
     <title> Mosaico </title>
 </head>
 
@@ -15,26 +15,26 @@
         <div class="container">
 
 
-            <div class="titulo"> Mosaico de Imagenes </div>
+            <div class="titulo text_center mt-1"> Agoodshop </div>
             <hr class="hr_pretty">
-            <div class="text_body">
-                Mosaico de imágenes es un programa diseñado para convertir imagenes jpg o png en mosaicos de imagenes más pequeñas. Tomemos, por ejemplo,
-                la siguiente:
+            <div class="text_body mt-1 mb-1">
+                Agoodshop es una aplicación realizada en puro HTML, CSS y Javascript. La misma realiza una petición a una API externa y se utiliza fetch
+                para procesar los datos. La aplicación es dinámica, pues se adapta a la cantidad de datos que se carguen. Simula ser un carrito de compras
+                donde el usuario puede seleccionar la cantidad de cada producto que desee y, a través del manejo del DOM, se actualiza dinamicamente la información.
+                Se ha trabajado con programación orientada a objetos donde el objeto carrito es quien dispone de la información a procesar.
             </div>
-            <img class="img_fluid" src="../../imgs/paisaje3.jpg" alt="...">
-            <div class="text_body">
-                El programa lo que hará es "recortar" la imagen en pequeños cuadrados de N x N (N definido por el usuario) para posteriormente analizar el
-                color de dichas secciones. Previamente, se cargaran en memoria la información de colores de todas las imágenes del repositorio y se procederá
-                a comparar cada cuadrado con los colores del repositorio, quedando elegida la imagen que mejor se adapte. Finalmente se reemplaza cada sección
-                con la imagen repositorio óptima, pero resizeada al tamaño N x N. Veamos como queda:
+            <img class="img_fluid" src="../../imgs/agoodshop2.png" alt="...">
+            <div class="text_body mt-1 mb-1">
+                El programa lo que hará es leer desde una API, y tomará la información en formato JSON para volcarlo en los objetos y posteriormente renderizar
+                la vista.
             </div>
-            <img class="img_fluid" src="../../imgs/MosaicoDeImagenes.jpg" alt="...">
-            <div class="text_body">
-                ¿No lo ves? Te invito a que puedas alejarte de la pantalla y visualizar la imagen a distancia. Ahora deberías ver que las imágenes son similares.
-                Por supuesto, los resultados pueden mejorar en función de la cantidad y variedad de imágenes en tu repositorio y el tamaño de los cuadrados.
+            <img class="img_resize" src="../../imgs/agoodshop3.png" alt="...">
+            <div class="text_body mt-1 mb-1">
+                Posteriormente modificando el mismo JSON, agregando un producto, la vista se actualiza en consecuencia.
             </div>
+            <img class="img_fluid" src="../../imgs/agoodshop.png" alt="...">
 
-            <a class="d-flex justify_content_center mb-5" href="/"> <div class="btn"> VOLVER </div> </a>
+            <a class="d-flex justify_content_center mb-1" href="/"> <div class="btn"> VOLVER </div> </a>
 
 
             

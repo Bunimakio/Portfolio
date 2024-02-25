@@ -4,20 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../projects.css">
     <title> Mosaico </title>
 </head>
 
 <body>
     
-    <div class="container_fluid mt-5">  
+    <div class="container_fluid mt-1">  
 
         <div class="container">
 
-            <img class="img_resize" src="../../imgs/logoCRAB.jpeg" alt="...">
-            <div class="text_body">
-                La página web del Club Atlético Almirante Brown aún se encuentra en desarrollo.
+            <div class="titulo text_center"> Club de Regatas Almirante Brown </div>
+            <hr class="hr_pretty">
+
+            <div class="container_fluid clearfix mt-1 mb-1">
+                <img class="img_logo mb-1 me-1" src="../../imgs/logoCRAB.jpeg" alt="...">
+                <div class="text_body text_justify">
+                    La página web del Club Atlético Almirante Brown aún se encuentra en desarrollo. El proyecto nace como petición del club para lograr un mayor
+                    alcance y que sus socios puedan contar con un medio para estar al tanto de las novedades e información relevante. Tambien se buscaba lograr
+                    una automatización de los procesos de inscripción a distintos eventos para lograr un mejor registro y control.
+                </div>
             </div>
+
+            <div class="subtitulo mb-1"> Algunas funcionalidades </div>
+
+            <div class="container_fluid clearfix">
+                <img class="img_resize float-left me-md-1 mb-md-1" src="../../imgs/Crab1.png" alt="...">
+                <div class="text_body bold clearfix"> Sistema de usuarios: </div> 
+                <div class="text_body text_justify"> La página cuenta con un sistema de logueo de usuarios aprovechando la potencia de listado
+                    herramientas brindadas por Django Auth, habiendo tres categorias: usuario no registrado, miembro y administrador. Cada uno cuenta con sus
+                    respectivos permisos. Los usuarios no registradon pueden visitar la página principal y ver las distintas noticias, sin embargo no pueden
+                    realizar inscripciones a actividades. Los miembros pueden inscribirse a las actividades y editar sus perfiles. Finalmente los administradores
+                    tienen la capacidad de agregar noticias y actividades, para ello la página cuenta con formularios de Django. <br>
+                    <div class="text_body bold"> Actividades: </div>
+                    la necesidad de crear un sistema de control para las actividades nace debido al crecimiento del club, donde cada vez más miembros
+                    asistían a las remadas y los controles debían llevarse a mano, a través de planillas. Con este sistema los miembros registrados pueden ver 
+                    una tabla donde los eventos se muestran listados, con sus respectivas observaciones, y cuentan con un botón de inscribirse. Tambien, en caso
+                    de necesitarlo, pueden desinscribirse. La página web generará un archivo PDF que los administradores pueden consultar con toda la información
+                    que el club a solicitado. <br>
+                </div>
+            </div>
+
+            <div class="container_fluid clearfix mt-1">
+
+                <img class="img_resize float-right ms-md-1 mb-md-1" src="../../imgs/Crab2.png" alt="...">
+                <div class="text_body bold clearfix"> Noticias: </div>
+                <div class="text_body text_justify clearfix">
+                    la creación de modelos de Django permite elaborar un sistema de noticias de facil uso, los administradores simplemente cargarán 
+                    un formulario y se creara una "card" automaticamente dentro de un carrousel. Esto permite una gestión práctica, rápida y de facil uso. <br>
+                </div>
+                <div class="text_body bold"> Galeria: </div>
+                <div class="text_body">
+                    La página utiliza un carrousel para mostrar como se desarrollan las actividades dentro del club, eventos y más.
+                </div>
+
+            </div>
+
+            </div>
+
+            <div class="d-flex justify_content_center mb-1">
+                <a class="d-flex" href="/"> <div class="btn"> VOLVER </div> </a>
+            </div>
+
         </div>
             
 
